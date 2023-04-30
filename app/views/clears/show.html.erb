@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @clear %>
+
+<div>
+  <%= link_to "Edit this clear", edit_clear_path(@clear) %> |
+  <%= link_to "Back to clears", clears_path %>
+
+  <%= button_to "Destroy this clear", @clear, method: :delete %>
+</div>

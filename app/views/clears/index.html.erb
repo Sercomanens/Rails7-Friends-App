@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Clears</h1>
+
+<div id="clears">
+  <% @clears.each do |clear| %>
+    <%= render clear %>
+    <p>
+      <%= link_to "Show this clear", clear %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New clear", new_clear_path %>
